@@ -1,15 +1,24 @@
 def main():
     path_to_file = "books/frankenstein.txt"
-        
-    with open(path_to_file) as f:
-        file_contents = f.read()
-        word_count = get_words_count(file_contents)
-        char_count = get_chars_count(file_contents)
-        # printing file contents and word count
-        print(file_contents)
-        print(word_count)
-        print(char_count)
-    
+    try:
+        with open(path_to_file) as f:
+            file_contents = f.read()
+            word_count = get_words_count(file_contents)
+            char_count = get_chars_count(file_contents)
+            s
+            # printing file contents and word count
+            print(f'--- Begin report of {path_to_file} ---')
+            print(f'{word_count} words found in the document')
+            print()
+            for c in char_count:
+                if c == "\n":
+                    print(f'The \\n character was found {char_count[c]} times')  
+                    continue  
+                print(f'The \'{c}\' character was found {char_count[c]} times')
+            print('--- End report ---')
+    except Exception as e:
+        print(e)
+
 def get_words_count(file):
     words = file.split()
     word_count = 0
