@@ -5,7 +5,7 @@ def main():
             file_contents = f.read()
             word_count = get_words_count(file_contents)
             char_count = get_chars_count(file_contents)
-            s
+            
             # printing file contents and word count
             print(f'--- Begin report of {path_to_file} ---')
             print(f'{word_count} words found in the document')
