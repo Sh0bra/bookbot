@@ -1,5 +1,5 @@
 # Bookbot
-BookBot is a simple program written in Python that takes a .txt book and returns a report on the number of words and characters in the book.
+BookBot is a simple program written in Python that takes a .txt and returns a report on the number of words and characters in the book.
 
 ## Command
 ```
