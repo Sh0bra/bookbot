@@ -11,9 +11,9 @@ def main():
             print(f'{word_count} words found in the document')
             print()
             for c in char_count:
-                # if c == "\n":
-                    # print(f'The \\n character was found {char_count[c]} times')  
-                    # continue  
+                if c == "\n":
+                    print(f'The \\n character was found {char_count[c]} times')  
+                    continue  
                 print(f'The \'{c}\' character was found {char_count[c]} times')
             print('--- End report ---')
     except Exception as e:
