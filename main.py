@@ -1,5 +1,3 @@
-import string
-
 def main():
     path_to_file = "books/frankenstein.txt"
     try:
@@ -26,11 +24,10 @@ def get_words_count(file):
     return word_count
 
 def get_chars_count(file):
-    alpha = list(string.ascii_lowercase)
     alpha_count = {}
     lower_file = file.lower()
     for char in lower_file:
-        if char in alpha:
+        if str.isalpha(char):
             if char in alpha_count:
                 alpha_count[char] += 1
             else:
