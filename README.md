@@ -1,5 +1,6 @@
 # Bookbot
 BookBot is a simple program written in Python that takes a .txt and returns a report on the number of words and characters in the book.
+BookBot is my first [Boot.dev](https://www.boot.dev) project!
 
 ## Command
 ```
